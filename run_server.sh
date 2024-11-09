@@ -4,7 +4,7 @@
 docker build -t processreceipt .
 
 # Run the test cases
-docker run processreceipt python3 -m unittest discover -s tests -p 'test_*.py'
+docker run processreceipt python3 -m unittest discover -s tests -p 'test*.py'
 
 # If the tests pass, run the server
 if [ $? -eq 0 ]; then
